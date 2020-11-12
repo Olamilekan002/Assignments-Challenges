@@ -1,0 +1,24 @@
+Python 2.7.8 (default, Jun 30 2014, 16:03:49) [MSC v.1500 32 bit (Intel)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> def enter_num():
+    while True:
+        try:
+            x = int(raw_input("Enter your numerator: "))
+        except:
+            print("opps you didnt enter an integer")
+            continue
+        break
+    while True:
+        try:
+            y = int(raw_input("Enter your denumerator: "))
+        except:
+            print("oops you didnt enter an integer")
+            continue
+        break
+    while True:
+        try:
+            print(x/y)
+        except:
+            print("one of your input is 0")
+            enter_num()
+            
